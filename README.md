@@ -6,6 +6,8 @@ This project allows a user to (a) utilise a smart contract of charity that can b
 - (c): `javascript/app.js`, `total.html`, and `index.html`: Intuitive and simple interaction between the html (frontend) and JavaScript (using web3.js to interact with the smart contract)
 - (d): `assets`: It's a simple Html CSS template to customize the website. Which includes css, fonts, images, js, and sass
 
+![image](https://user-images.githubusercontent.com/29563979/228442661-b9bc14be-ea32-475c-ab86-4a61c80d1620.png)
+
 ### Get Started
 1. Clone Repository
 2. cd To Repository
@@ -34,13 +36,18 @@ Our  contract is written in Solidity and has two main funcitons:
 2. Click on it
 3. Fill the amount (all the other details are not important)
 3. Submit the buttom "Donate Now"
+![image](https://user-images.githubusercontent.com/29563979/228442105-8249835a-a01a-4d75-aef2-dfb25760a229.png)
 
 ### How to see total donations?:
 1. Simply land on the home page and you will see a section "Total Donation" in the nav bar.
 2. Click on it
 3. Now, Click on the button Get "Total Donations!"
 3. Now, you can see the total donations
+![image](https://user-images.githubusercontent.com/29563979/228442249-71138180-1f4f-498b-9c50-86e257987594.png)
 
+### Published Contract:
+- Contract Address: 0xd771c88f5Fee5241a1A9a3725c66FFEEc3B5d9c6
+- ABI: [{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"donations","outputs":[{"internalType":"uint256","name":"date","type":"uint256"},{"internalType":"uint256","name":"amount","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_from","type":"address"}],"name":"getDonationFromAddress","outputs":[{"components":[{"internalType":"uint256","name":"date","type":"uint256"},{"internalType":"uint256","name":"amount","type":"uint256"}],"internalType":"struct Charity.Donation","name":"","type":"tuple"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getLastDonation","outputs":[{"components":[{"internalType":"uint256","name":"date","type":"uint256"},{"internalType":"uint256","name":"amount","type":"uint256"}],"internalType":"struct Charity.Donation","name":"","type":"tuple"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getTotalDonation","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"setDonation","outputs":[],"stateMutability":"nonpayable","type":"function"}]
 
 ### Please read:
 1. You need MetaMask for this project - it is injecting the web3
